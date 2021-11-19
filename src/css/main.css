@@ -58,7 +58,6 @@
   text-align: center;
 }
 
-/* Begin styling the report items here! */
 .reports {
   display: grid; 
   grid-auto-rows: 1fr; 
@@ -67,6 +66,7 @@
 }
 
 @media(max-width: 820px) {
+  /* Although a max width of 768px was requested, it resulted in size scroll. I adjusted the width to the point where it fits as cosy on the screen before it has to shrink. Also added in a follow up media query for full responsiveness. */
   .reports {
     grid-template-columns: repeat(2, 1fr);
   }
